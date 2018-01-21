@@ -1,7 +1,7 @@
 body {
   font-family: Helvetica, sans-serif;
 }
-main {
+main, nav {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -10,15 +10,21 @@ main {
 header {
   height: 100px;
   background-color: #444;
+  margin-bottom: 30px;
+}
+nav img {
+  margin-top: 15px;
 }
 nav ul {
-  border: thin solid;
   display: inline-block;
+  position: relative;
+  top: -30px;
 }
 nav ul li {
   color: #999;
   display: inline-block;
-  padding: 0 20px 20px 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
 }
 main ul li {
   /* display: inline-block; */
@@ -28,13 +34,17 @@ main ul li {
 main ul li:last-of-type {
   margin-right: 0;
 }
+section {
+  margin-bottom: 30px;
+  overflow: auto;
+}
 section img {
-  margin-right: 30px;
   float: left;
 }
 div {
   width: calc( 50% - 30px);
   float: left;
+  margin-left: 30px;
 }
 h2 {
   font-size: 20px;
@@ -52,5 +62,18 @@ button {
   font-size: 18px;
   padding: 10px 30px;
   margin-top: 10px;
+  transition: background 350ms, color 350ms;
+  cursor: pointer;
+}
+button:hover, button:focus {
+  background: #aaa;
+  color: #000;
+}
+footer {
+  height: 150px;
+  clear: both;
+  margin-top: 30px;
+  background-color: #444;
+
 }
 
